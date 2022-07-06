@@ -1,0 +1,129 @@
+<!--
+    Tabelas
+
+    <table>
+    
+        Prós
+        - Vizualização de dados via linhas e colunas
+        - Boa acessibilidade para leitura dos dados
+
+        Contras
+        - Pouco Flexível
+        - Precisa de estilização para melhor vizualização
+
+        Não Usar
+        - Para criar seu layout
+-->
+
+
+<!--Tabela Básica-->
+<table>
+    <tr>
+        <th>NOME</th>
+        <TH>IDADE</TH>
+    </tr>
+    <tr>
+        <th>Cris</th>
+        <th>35</th>
+    </tr>
+    <tr>
+        <th>Anderson</th>
+        <th>29</th>
+    </tr>
+    <tr>
+        <th>Bete</th>
+        <th>22</th>
+    </tr>
+
+</table>
+<br><br><br>
+
+
+<!--Organizando Tabelas-->
+<table>
+    <caption> <strong>PESSOAS POR IDADE</strong> </caption>    
+    <thead>
+        <tr>
+            <th>NOME</th>
+            <TH>IDADE</TH>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <th>Cris</th>
+            <th>35</th>
+        </tr>
+        <tr>
+            <th>Anderson</th>
+            <th>29</th>
+        </tr>
+        <tr>
+            <th>Bete</th>
+            <th>22</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Total</th>
+            <th>3 Pessoas</th>
+        </tr>
+    </tfoot>
+    
+
+</table>
+<br><br><br>
+
+
+<!--
+    Tabelas Complexas
+
+    2 lojas
+        Quantos produtos produzidos, vendidos e agrupados por nome
+-->
+
+<table>
+
+    <caption> <strong>PRODUZIDOS X VENDIDOS POR LOJA</strong> </caption>
+
+    <colgroup>
+        <col style="background-color: green;">
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: blue;">
+
+    </colgroup>
+
+   <thead>
+       <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup"> Loja 01</th>
+            <th colspan="2" scope="colgroup"> Loja 02</th>
+     </tr>
+     <tr>
+         <th scope="col">Produzidos</th>
+         <th scope="col">Vendidos</th>
+         <th scope="col">Produzidos</th>
+         <th scope="col">Vendidos</th>
+     </tr>     
+   </thead>
+
+   <tbody>
+       <tr>
+        <th scope="row">Vassouras</th>
+        <th>50</th>
+        <th>30</th>
+        <th>20</th>
+        <th>20</th>
+       </tr>
+       <tr>
+        <th scope="row">Baldes</th>
+        <th>10</th>
+        <th>10</th>
+        <th>30</th>
+        <th>25</th>
+       </tr>
+      
+   </tbody>
+
+</table>
+

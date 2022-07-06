@@ -1,0 +1,72 @@
+.box {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
+
+.box1 {
+    background-color: blueviolet;
+    position: relative; /*relativo a página sem afetar demais elementos*/
+    left: 100px;
+}
+
+.box2 {
+    background-color: coral;
+    position: absolute; /*absoluto a tela, move demais elementos para posição padrão)*/
+    right: 100px;
+    top: 80px;
+}
+
+.box3 {
+    background-color: darkcyan;
+    position: fixed;
+}
+main {
+    margin-top: 150px;
+    position: relative;
+    left: 50px;
+} /*quando colocamos main, então esse será relativo ao pai (main)*/
+
+.box4 {
+    background-color: orangered;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    z-index: 3;
+}
+
+.box5 {
+    background-color: rgb(66, 20, 173);
+    position: absolute;
+    left: 10px;
+    top: 10px
+}
+
+.box6 {
+    background-color: rgb(86, 245, 55);
+    position: absolute;
+    left: 15px;
+    top: 15px
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
